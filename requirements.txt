@@ -1,0 +1,9 @@
+
+datasets
+transformers
+tokenizers
+numpy
+tqdm
+wandb
+tensorboard
+pyyaml

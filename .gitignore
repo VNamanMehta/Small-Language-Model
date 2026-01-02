@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyd
+*.o
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+venv.bak/
+/htmlcov/
+.nox/
+.tox/
+
+# Editors
+.vscode/
+.idea/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+develop-eggs/
+eggs/
+*.egg-info/
+.installed.cfg
+*.manifest
+*.spec
+
+# Logs and Data
+*.log
+
+# Project specific
+checkpoints/
+data/raw/
+data/processed/
+data/tokenizer/
