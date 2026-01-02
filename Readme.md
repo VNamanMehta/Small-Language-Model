@@ -73,8 +73,20 @@ Once you have a trained checkpoint, you can use this script to generate new stor
 ```bash
 python generate.py
 ```
+<details>
+<summary>Sample Output</summary>
 
-You can customize the prompt and other generation parameters by editing the `generate.py` file.
+```
+⏳ Loading model from checkpoints/ckpt_36000.pt...
+✅ Model loaded successfully.
+
+📝 Prompt: Once upon a time, there was a huge dragon
+🤖 Generating...
+--------------------------------------------------
+Once upon a time, there was a huge dragon. The dragon was very friendly. He loved to play with the other animals in the forest. One day, the dragon was playing with a little bird. The bird was singing a song. The dragon liked the song and started to dance. The bird was very happy to see the dragon dance. They played together all day long.
+--------------------------------------------------
+```
+</details>
 
 **6. Evaluate the Model**
 
@@ -87,8 +99,27 @@ python evaluate.py
 By default, it will use the latest checkpoint. To evaluate a specific one, use the `--checkpoint` flag:
 
 ```bash
-python evaluate.py --checkpoint checkpoints/ckpt_10000.pt --prompt "Once upon a time"
+python evaluate.py --checkpoint checkpoints/ckpt_10000.pt
 ```
+<details>
+<summary>Sample Output</summary>
+
+```
+🔥 Evaluating on Device: CUDA
+No checkpoint specified. Searching for the latest one...
+⏳ Loading model from checkpoints\ckpt_36000.pt...
+✅ Model loaded successfully.
+Evaluating for 100 iterations...
+Evaluating: 100%|██████████| 100/100 [00:10<00:00,  9.95it/s]
+
+==============================
+✨ Evaluation Results ✨
+Checkpoint: checkpoints\ckpt_36000.pt
+Average Validation Loss: 1.3461
+Perplexity: 3.8425
+==============================
+```
+</details>
 
 ## Model Architecture
 
