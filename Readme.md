@@ -1,4 +1,4 @@
-# TinyStories GPT: A Minimalist Language Model
+# TinyStories SLM : A Minimalist Language Model
 
 This project is a from-scratch implementation of a GPT-style small language model trained on the "TinyStories" dataset.
 
@@ -99,6 +99,7 @@ The model is a standard GPT-style decoder-only transformer with the following de
 *   **Number of Heads:** 8
 *   **Vocabulary Size:** 10,000
 *   **Max Sequence Length:** 256
+*   **Total Parameters:** ~9 Million
 
 ## Dataset
 
